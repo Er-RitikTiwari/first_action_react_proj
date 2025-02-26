@@ -1,0 +1,8 @@
+name: logs
+on: push
+jobs:
+  logs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking out the logs
+        run: ${{ toJSON(job) }}
