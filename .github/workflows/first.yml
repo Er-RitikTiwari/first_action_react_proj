@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get code
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: install node
-        uses: action/ actions/setup-node@v4
+        uses: actions/setup-node@v4
       - name: install dependencies
         run: npm ci
       - name: run test
